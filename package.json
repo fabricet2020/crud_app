@@ -1,0 +1,20 @@
+{
+  "name": "crud_app",
+  "version": "1.0.0",
+  "description": "CSE 341 Final Project - CRUD App",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabricet2020/crud_app.git"
+  },
+  "author": "FT Banyingela",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fabricet2020/crud_app/issues"
+  },
+  "homepage": "https://github.com/fabricet2020/crud_app#readme"
+}
