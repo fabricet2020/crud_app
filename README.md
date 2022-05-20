@@ -20,3 +20,11 @@ views
 # Step 3 - HTTL Server
 
 # Step 4 - Create Views
+
+# Step 4 - Create a live server (index.html under views)
+
+# Step 5 - Main Section
+
+# Step 6 - Style my html
+
+Import some fonts (https://fonts.google.com/) Search for barlow Regular 400 and PT Sans Regular 400

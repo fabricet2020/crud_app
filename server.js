@@ -26,7 +26,17 @@ app.use('/js',express.static(path.resolve(__dirname,"assets/js")))
 // css/styles.css
 
 app.get('/',(req,res)=> {
-    res.send("CSE 341 Group 6 - Final Application");
+    //res.send("CSE 341 Group 6 - Final Application");
+    res.render('index');
+})
+
+app.get('/add-user',(req,res)=>{
+    res.render('add_user');
+   
+})
+
+app.get('/update-user',(req,res)=>{
+    res.render('update_user'); 
 })
 
 app.listen(PORT,()=>{console.log(`Application running on Port number: ${PORT}`)}); 
