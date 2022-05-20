@@ -25,6 +25,8 @@ app.use('/img',express.static(path.resolve(__dirname,"assets/img")))
 app.use('/js',express.static(path.resolve(__dirname,"assets/js")))
 // css/styles.css
 
+/* // Load routers 
+//app.use('/', require('./server/routes/router'))
 app.get('/',(req,res)=> {
     //res.send("CSE 341 Group 6 - Final Application");
     res.render('index');
@@ -37,6 +39,9 @@ app.get('/add-user',(req,res)=>{
 
 app.get('/update-user',(req,res)=>{
     res.render('update_user'); 
-})
+}) */
 
+// load routers
+app.use('/', require('./server/routes/router'))
+ 
 app.listen(PORT,()=>{console.log(`Application running on Port number: ${PORT}`)}); 
