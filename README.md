@@ -18,3 +18,5 @@ controller, database, model, routes, services
 views
 
 # Step 3 - HTTL Server
+
+# Step 4 - Create Views
