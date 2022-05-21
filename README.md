@@ -27,4 +27,12 @@ views
 
 # Step 6 - Style my html
 
+# Step 7 - Modularization
+
+# Step 8 - Server (routes)
+
+# Step 9 - Services
+
+# Step 10 - DB
+
 Import some fonts (https://fonts.google.com/) Search for barlow Regular 400 and PT Sans Regular 400

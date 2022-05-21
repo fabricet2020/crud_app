@@ -4,13 +4,19 @@ const morgan = require('morgan');
 const bodyparser = require("body-parser");
 const path = require('path');
 
+//Link to the connection DB
+const connectDB=require('./server/database/connection');
+
 const app = express();
 
 dotenv.config({path:'config.env'})
 const PORT = process.env.PORT || 8080
 
 // Print a message using morgan
-app.use(morgan('tiny'));
+app.use(morgan('FT Banyingela'));
+
+// Call the DB connection
+connectDB();
 
 // Parse request to body-parser
 app.use(bodyparser.urlencoded({extended:true}))
@@ -41,7 +47,7 @@ app.get('/update-user',(req,res)=>{
     res.render('update_user'); 
 }) */
 
-// load routers
+// Redirect to routers
 app.use('/', require('./server/routes/router'))
  
 app.listen(PORT,()=>{console.log(`Application running on Port number: ${PORT}`)}); 
